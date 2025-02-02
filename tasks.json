@@ -1,0 +1,15 @@
+{
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "build",
+      "command": "pnpm",
+      "args": [
+        "build"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/saas-starter"
+      }
+    }
+  ]
+}

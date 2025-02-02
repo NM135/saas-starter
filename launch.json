@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Server",
+      "program": "${workspaceFolder}/saas-starter/${input:programPath}",
+      "args": [],
+      "envFile": "${workspaceFolder}/saas-starter/.env",
+      "preLaunchTask": "build"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "pickString",
+      "id": "programPath",
+      "description": "Select the server file to launch",
+      "options": [
+        "server.js",
+        "next-server.js"
+      ]
+    }
+  ]
+}
